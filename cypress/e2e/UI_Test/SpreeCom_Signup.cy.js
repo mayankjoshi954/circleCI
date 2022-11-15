@@ -9,7 +9,7 @@ describe('Cypress Application', function() {
     
    // Enter Email and Password
     
-    cy.get("input[placeholder='Email']").type('cypress-test@spree.com')
+    cy.get("input[placeholder='Email']").type('cypress-test123@spree.com')
     cy.get("input[placeholder='Password']").type('spree@123')
     cy.get("input[placeholder='Password Confirmation']").type('spree@123')
     cy.get("input[type='submit']").click()

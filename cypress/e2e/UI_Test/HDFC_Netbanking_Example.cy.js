@@ -1,19 +1,19 @@
-//import 'cypress-iframe'
-describe('To Handle iFrame', function () {
-    it('Visits the HDFC Net Banking Page and Perform Action', function () {
-        //Visit the HDFC Netbanking Website
-        cy.visit("https://netbanking.hdfcbank.com/netbanking/");
+// //import 'cypress-iframe'
+// describe('To Handle iFrame', function () {
+//     it('Visits the HDFC Net Banking Page and Perform Action', function () {
+//         //Visit the HDFC Netbanking Website
+//         cy.visit("https://netbanking.hdfcbank.com/netbanking/");
 
-        // Enter to Frame and then perform action on element
+//         // Enter to Frame and then perform action on element
 
-        cy.get("frame[name='login_page']").then(function ($iframe) {
-            const iframeele = $iframe.contents().find('input[name="fldLoginUserId"]')
+//         cy.get("frame[name='login_page']").then(function ($iframe) {
+//             const iframeele = $iframe.contents().find('input[name="fldLoginUserId"]')
             
-            cy.wrap(iframeele).type('1000')
-            const iframebutton = $iframe.contents().find(".btn.btn-primary.login-btn")
-            cy.wrap(iframebutton).click()
-            cy.xpath("span[text()='PAssword/ipin'").should("have.text")
-        })
+//             cy.wrap(iframeele).type('1000')
+//             const iframebutton = $iframe.contents().find(".btn.btn-primary.login-btn")
+//             cy.wrap(iframebutton).click()
+//             cy.xpath("span[text()='PAssword/ipin'").should("have.text")
+//         })
 
-    })
-})
+//     })
+// })
