@@ -35,14 +35,14 @@ describe('Child Tab Example', function () {
     //     cy.get("a[href='http://www.orangehrm.com/']")
     //     .invoke('removeAttr', 'target').click();
     //  });
-     it.only('Child Tab -Test 2', function (){
-        // launch the url
-        cy.visit("https://www.flipkart.com/");
+    //  it.only('Child Tab -Test 2', function (){
+    //     // launch the url
+    //     cy.visit("https://www.flipkart.com/");
 
-        cy.xpath("//div[contains(text(),'2-Wheelers')]").click()
-        cy.xpath("//a[contains(text(),'Bounce Infinity E1 Desat Silver Booking for Ex-sho')]").invoke('removeAttr', 'target').click();
-        cy.url().should('include','/bounce-infinity')
-        cy.go('back')
-        cy.url().should('include','vehicles/bikes-scooters')
-     });
+    //     cy.xpath("//div[contains(text(),'2-Wheelers')]").click()
+    //     cy.xpath("//a[contains(text(),'Bounce Infinity E1 Desat Silver Booking for Ex-sho')]").invoke('removeAttr', 'target').click();
+    //     cy.url().should('include','/bounce-infinity')
+    //     cy.go('back')
+    //     cy.url().should('include','vehicles/bikes-scooters')
+    //  });
 })
