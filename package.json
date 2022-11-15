@@ -1,0 +1,23 @@
+{
+  "name": "cypress_training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules//.bin//cypress run",
+    "RunTest": "npm run test --",
+    "Cypress_UI_Test": "npm run test -- --spec \"cypress/e2e/UI_Test/**/*.js\""
+  },
+  "author": "Mayank Joshi",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
+    "cypress": "^11.0.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.1"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-localstorage-commands": "^2.2.1"
+  }
+}
