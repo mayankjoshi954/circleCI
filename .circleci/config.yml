@@ -36,4 +36,4 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress-io/run # "run" job comes from "cypress" orb
+      - cypress/run # "run" job comes from "cypress" orb
